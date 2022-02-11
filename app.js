@@ -1,6 +1,3 @@
-const profileDataArgs = process.argv.slice(2, process.argv.length);
+const profileDataArgs = process.argv.slice(2);
 
-const printProfileData = profileDataArr => {
-    profileDataArr.forEach((profileItem) => console.log(profileItem));
-};
-printProfileData(profileDataArgs);
+const generatePage = (userName, githubName) => `Name: ${userName}, Github: ${githubName}`;
